@@ -53,7 +53,7 @@ export function ScheduleSection() {
     <Wrap>
       <FireflyAmbience theme="light" />
       <Content>
-        <div className="eyebrow">26 Eylül 2026</div>
+        <div className="eyebrow">31 Ekim 2026</div>
         <h2>Düğün Günü<br />Programı</h2>
         {SCHEDULE.map((item) => (
           <Row key={item.time}>

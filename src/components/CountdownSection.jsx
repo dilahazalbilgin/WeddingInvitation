@@ -4,7 +4,7 @@ import { FireflyAmbience } from './ui/FireflyAmbience';
 import { useCountdown } from '../hooks/useCountdown';
 import { WEDDING_DATE } from '../constants/wedding';
 
-const countdownImage = `${import.meta.env.BASE_URL}images/countdown-couple.jpg`;
+const countdownImage = `${import.meta.env.BASE_URL}images/IMG_3383.JPG`;
 
 const Wrap = styled(Section)`
   display: grid;
@@ -19,7 +19,6 @@ const Wrap = styled(Section)`
     background:
       linear-gradient(rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)),
       url('${countdownImage}') center 35% / cover no-repeat;
-    filter: grayscale(1);
     pointer-events: none;
   }
 `;

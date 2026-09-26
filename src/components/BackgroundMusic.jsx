@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const musicSrc = `${import.meta.env.BASE_URL}music.mp3`;
+const musicSrc = `${import.meta.env.BASE_URL}ask.mp3`;
 
 export function BackgroundMusic() {
   const audioRef = useRef(null);

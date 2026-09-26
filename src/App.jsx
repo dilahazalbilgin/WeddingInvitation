@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { HeroSection } from './components/HeroSection';
 import { InvitationSection } from './components/InvitationSection';
 import { CountdownSection } from './components/CountdownSection';
-import { ScheduleSection } from './components/ScheduleSection';
 import { RsvpSection } from './components/RsvpSection';
 import { BackgroundMusic } from './components/BackgroundMusic';
 
@@ -24,7 +23,6 @@ export default function App() {
         <HeroSection />
         <InvitationSection />
         <CountdownSection />
-        <ScheduleSection />
         <RsvpSection />
       </SnapContainer>
     </>

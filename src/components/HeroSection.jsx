@@ -4,7 +4,7 @@ import { Section } from './ui/Section';
 import { FireflyAmbience } from './ui/FireflyAmbience';
 import { WEDDING } from '../constants/wedding';
 
-const heroImage = `${import.meta.env.BASE_URL}images/editorial-couple.jpg`;
+const heroImage = `${import.meta.env.BASE_URL}images/1.jpeg`;
 
 const linePulse = keyframes`
   0% {
@@ -193,6 +193,7 @@ export function HeroSection() {
         <div className="initials">{WEDDING.initials}</div>
         <div className="couple">{WEDDING.couple}</div>
         <div className="date">{WEDDING.dateLabel}</div>
+        <div className="date">{WEDDING.dateLabel2}</div>
       </Mark>
 
       <ScrollHint
