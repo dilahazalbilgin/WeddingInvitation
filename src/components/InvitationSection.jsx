@@ -429,6 +429,11 @@ const EventContent = styled.div`
 
     color: rgba(29, 26, 22, 0.82);
   }
+    .time {
+  color: #a98756;
+  font-weight: 600;
+  white-space: nowrap;
+}
 
   .address {
     max-width: 40ch;
@@ -545,6 +550,7 @@ const LinkButton = styled.a`
 
 function WeddingEvent({
   date,
+  time,
   locationName,
   address,
   directionsUrl,
@@ -564,7 +570,9 @@ function WeddingEvent({
 
         <h3>{venue}</h3>
 
-        <p className="event-date">{date}</p>
+        <p className="event-date">{date}
+          <span className="time"> • {time}</span>
+        </p>
 
         <p className="address">{address}</p>
 
@@ -634,6 +642,7 @@ export function InvitationSection() {
             <WeddingEvent
               date={WEDDING.dateLongLabel1}
               locationName={WEDDING.locationName1}
+              time={WEDDING.time1}
               address={WEDDING.address1}
               directionsUrl={WEDDING.directionsUrl1}
             />
@@ -641,6 +650,7 @@ export function InvitationSection() {
             <WeddingEvent
               date={WEDDING.dateLongLabel2}
               locationName={WEDDING.locationName2}
+              time={WEDDING.time2}
               address={WEDDING.address2}
               directionsUrl={WEDDING.directionsUrl2}
             />
